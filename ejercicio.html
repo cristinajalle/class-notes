@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+            
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+            
+            *{font-family: "Roboto", sans-serif}
+
+            form{ background-color: aquamarine;
+            
+                }
+            .text {
+                font-size: 10px;
+            }
+            #edad {
+                margin: 24px;
+            }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Formulario de Bandas</h1>
+    <form action="">
+        <Label for="text">Nombre Usuario</Label>
+        <input class="text" type="text" name="text">
+        <br>
+        <label for="numero">Edad</label>
+        <input id="edad" type="number" name="numero" min="0" max="18">
+        <br>
+        <label for="grupos">Tus grupos favoritos</label>
+        <br>
+        <textarea name="grupos" id="grupos" cols="30" rows="10">Tus grupos favoritos</textarea> 
+        <br>
+        <label for="generos">Generos musicales</label>
+        <br>
+        <select name="" id="">
+            <option>Progressive Rock</option>
+            <option>Hard Rock</option>
+            <option>Indie rock</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit" onclick="console.log('form submitted')">
+    </form>
+</body>
+</html>
